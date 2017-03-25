@@ -52,6 +52,8 @@
 <script src="js/common/models/employees-model.js"></script>
 <script src="js/common/models/usstates-model.js"></script>
 
+<script src="js/volunteerProfiles/volunteerProfiles.js"></script>
+
 <script src="js/employees/employees.js"></script>
 <script src="js/employees/edit/employee-edit.js"></script>
 <script src="js/employees/create/employee-create.js"></script>

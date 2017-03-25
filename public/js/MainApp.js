@@ -4,6 +4,7 @@ angular.module('MainApp', [
     'employees',
     'accidents',
     'claims',
+    'volunteerProfiles',
     'wombat.models.usstates',
     'wombat.models.countries'
 ])
