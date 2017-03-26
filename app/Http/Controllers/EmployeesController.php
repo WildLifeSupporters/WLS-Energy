@@ -56,7 +56,8 @@ class EmployeesController extends Controller
         $employee->Zip = $request->input('Zip');
         $employee->DateOfBirth = $request->input('DateOfBirth');
         $employee->Vaccine = $request->input('Vaccine');
-        $employee->Resume  = $request->input('Resume');
+        $employee->Resume = $request->input('Resume');
+        $employee->Department = $request->input('Department');
         $employee->Email = $request->input('Email');
         $employee->Password = $request->input('Password');
         $employee->save();
