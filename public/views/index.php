@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Project CRUD</title>
+    <title>Project WLS</title>
 
     <base href="/">
     <link rel="stylesheet" href="assets/css/normalize.css">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/eggly.css">
     <link rel="stylesheet" href="assets/css/animations.css">
 <!--    <link rel="stylesheet" href="assets/css/app.css">-->
+
 </head>
 <body>
 <div class="container-fluid">
@@ -22,12 +23,12 @@
 <!--        // input smad majors page here-->
 <!--        // For smad majors angular bootstrap page for example of pretty looking things for our page.-->
 <!--        // Nav is the navigation bars. So if we have more than one copy the nav line and rename it TopNav-->
-<!--        <div class="col-sm-3 col-md-2 sidebar" ui-view="nav"></div>-->
+<!-- <div class="col-sm-3 col-md-2 sidebar" ui-view="nav"></div>-->
         <header class="header dark-bg" ui-view="topNav"></header>
         <aside>
             <div id="sidebar" class="nav-collapse" ui-view="sideNav"></div>
         </aside>
-<!--        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ui-view="content"></div>-->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ui-view="content"></div>
     </div>
 </div>
 
@@ -46,13 +47,14 @@
 <script src="js/MainApp.js"></script>
 <script src="js/nav/nav.js"></script>
 
+
+<script src="js/common/models/volunteerProfile-model.js"></script>
 <script src="js/common/models/accidents-model.js"></script>
 <script src="js/common/models/claims-model.js"></script>
 <script src="js/common/models/countries-model.js"></script>
 <script src="js/common/models/employees-model.js"></script>
 <script src="js/common/models/usstates-model.js"></script>
 
-<script src="js/volunteerProfiles/volunteerProfiles.js"></script>
 
 <script src="js/employees/employees.js"></script>
 <script src="js/employees/edit/employee-edit.js"></script>
@@ -65,6 +67,7 @@
 <script src="js/claims/claims.js"></script>
 <script src="js/claims/edit/claim-edit.js"></script>
 <script src="js/claims/create/claim-create.js"></script>
+<script src="js/volunteerProfiles/volunteerProfiles.js"></script>
 
 </body>
 </html>

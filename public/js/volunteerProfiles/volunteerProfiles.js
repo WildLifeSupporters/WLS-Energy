@@ -3,7 +3,7 @@ angular.module('volunteerProfiles', [
     // employees module is then routed to the main application
     // 'employees.create',
     // 'employees.edit',
-    'wombat.models.volunteerProfile'
+    'wombat.models.volunteerProfiles'
 ])
     .config(function ($stateProvider) {
         $stateProvider

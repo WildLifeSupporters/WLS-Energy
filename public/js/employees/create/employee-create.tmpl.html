@@ -1,94 +1,60 @@
 <form class="create-form" name="employeeCreateForm" role="form" ng-submit="createEmployeeCtrl.createEmployee(newEmployee);" novalidate>
     <div class="form-group">
         <label for="newEmployeeFirstName">First Name:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeFirstName.$touched && employeeCreateForm.newEmployeeFirstName.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeFirstName.$touched && employeeCreateForm.newEmployeeFirstName.$error.pattern">
-                You may only enter letters!
-            </span>
+            <!--<span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeFirstName.$touched && employeeCreateForm.newEmployeeFirstName.$error.required">-->
+                <!--Required!-->
+            <!--</span>-->
+            <!--<span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeFirstName.$touched && employeeCreateForm.newEmployeeFirstName.$error.pattern">-->
+                <!--You may only enter letters!-->
+            <!--</span>-->
             <!--<span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeFirstName.$touched && employeeCreateForm.newEmployeeFirstName.$error.unique">-->
                 <!--Must be a unique name!-->
             <!--</span>-->
         </label>
         <input type="text" class="form-control" name="newEmployeeFirstName"
-               id="newEmployeeFirstName" ng-model="createEmployeeCtrl.newEmployee.FirstName"
+               id="newEmployeeFirstName"
                placeholder="Enter First Name" maxlength="20" pattern="[A-Za-z]+" required>
     </div>
     <div class="form-group">
-        <label for="newEmployeeMI">Middle Initial: </label>
-        <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeMI.$touched && employeeCreateForm.newEmployeeMI.$invalid">
-            May only contain 1 capital letter
-        </span>
-        <input type="text" class="form-control" name="newEmployeeMI"
-               id="newEmployeeMI" ng-model="createEmployeeCtrl.newEmployee.MI"
-               placeholder="Enter Middle Initial" maxlength="1" pattern="[A-Z]+">
-    </div>
-    <div class="form-group">
         <label for="newEmployeeLastName">Last Name:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeLastName.$touched && employeeCreateForm.newEmployeeLastName.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeLastName.$touched && employeeCreateForm.newEmployeeLastName.$error.pattern">
-                You may only enter letters!
-            </span>
+
         </label>
         <input type="text" class="form-control" name="newEmployeeLastName"
-               id="newEmployeeLastName" ng-model="createEmployeeCtrl.newEmployee.LastName"
+               id="newEmployeeLastName"
                placeholder="Enter Last Name" maxlength="20" pattern="[A-Za-z]+" required>
     </div>
     <div class="form-group">
-        <label for="newEmployeeHouseNumber">House Number:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeHouseNumber.$touched && employeeCreateForm.newEmployeeHouseNumber.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeHouseNumber.$touched && employeeCreateForm.newEmployeeHouseNumber.$error.pattern">
-                You may only enter numbers!
-            </span>
+        <label for="newEmployeeAddressLine1">Address Line 1:
+
         </label>
-        <input type="text" class="form-control" name="newEmployeeHouseNumber"
-               id="newEmployeeHouseNumber" ng-model="createEmployeeCtrl.newEmployee.HouseNumber"
-               placeholder="Enter House Number" maxlength="20" pattern="[0-9]+" required>
+        <input type="text" class="form-control" name="newEmployeeAddressLine1"
+               id="newEmployeeAddressLine1"
+               placeholder="Enter Address Line 1" maxlength="20" pattern="[0-9]+" required>
     </div>
     <div class="form-group">
-        <label for="newEmployeeStreet">Street:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeStreet.$touched && employeeCreateForm.newEmployeeStreet.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeStreet.$touched && employeeCreateForm.newEmployeeStreet.$error.pattern">
-                May only enter letters!
-            </span>
+        <label for="newEmployeeAddressLine2">Address Line 2:
+
         </label>
-        <input type="text" class="form-control" name="newEmployeeStreet"
-               id="newEmployeeStreet" ng-model="createEmployeeCtrl.newEmployee.Street"
-               placeholder="Enter Street" maxlength="20" pattern="[A-Za-z ]+" required>
+        <input type="text" class="form-control" name="newEmployeeAddressLine2"
+               id="newEmployeeAddressLine2"
+               placeholder="Enter Address Line 2" maxlength="20" pattern="[A-Za-z ]+" required>
     </div>
     <div class="form-group">
         <label for="newEmployeeCity">City:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeCity.$touched && employeeCreateForm.newEmployeeCity.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeCity.$touched && employeeCreateForm.newEmployeeCity.$error.pattern">
-                You may only enter letters!
-            </span>
+
         </label>
         <input type="text" class="form-control" name="newEmployeeCity"
-               id="newEmployeeCity" ng-model="createEmployeeCtrl.newEmployee.City"
+               id="newEmployeeCity"
                placeholder="Enter City" maxlength="20" pattern="[A-Za-z ]+">
     </div>
-    <div class="form-group">
-        <label for="newEmployeeCounty">County:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeCounty.$touched && employeeCreateForm.newEmployeeCounty.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeCounty.$touched && employeeCreateForm.newEmployeeCounty.$error.pattern">
-                You may only enter letters!
-            </span>
-        </label>
-        <input type="text" class="form-control" name="newEmployeeCounty"
-               id="newEmployeeCounty" ng-model="createEmployeeCtrl.newEmployee.County"
-               placeholder="Enter County" maxlength="20" pattern="[A-Za-z ]+" required>
-    </div>
+    <!--<div class="form-group">-->
+        <!--<label for="newEmployeeCounty">County:-->
+
+        <!--</label>-->
+        <!--<input type="text" class="form-control" name="newEmployeeCounty"-->
+               <!--id="newEmployeeCounty"-->
+               <!--placeholder="Enter County" maxlength="20" pattern="[A-Za-z ]+" required>-->
+    <!--</div>-->
     <div class="form-group">
         <label for="newEmployeeState">State: </label>
         <select class="form-control"
@@ -96,19 +62,6 @@
                 ng-model="createEmployeeCtrl.newEmployee.EmployeeState"
                 ng-options="usstate.StateAbb as usstate.StateName for usstate in createEmployeeCtrl.usstates">
             <option value="">No State</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="newEmployeeCountry">Country:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeCountry.$touched && employeeCreateForm.newEmployeeCountry.$error.required">
-                Required!
-            </span>
-        </label>
-        <select class="form-control" name="newEmployeeCountry" required
-            id="newEmployeeCountry"
-            ng-model="createEmployeeCtrl.newEmployee.EmployeeCountry"
-            ng-options="country.CountryAbb as country.CountryName for country in createEmployeeCtrl.countries">
-            <option value="">select a Country</option>
         </select>
     </div>
     <div class="form-group">
@@ -126,68 +79,51 @@
     </div>
     <div class="form-group">
         <label for="newEmployeeDateOfBirth">Date Of Birth:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeDateOfBirth.$touched && employeeCreateForm.newEmployeeDateOfBirth.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeDateOfBirth.$touched && employeeCreateForm.newEmployeeDateOfBirth.$error.date">
-                Not a valid date!
-            </span>
+            <!--<span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeDateOfBirth.$touched && employeeCreateForm.newEmployeeDateOfBirth.$error.required">-->
+                <!--Required!-->
+            <!--</span>-->
+            <!--<span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeDateOfBirth.$touched && employeeCreateForm.newEmployeeDateOfBirth.$error.date">-->
+                <!--Not a valid date!-->
+            <!--</span>-->
         </label>
         <input type="text" class="form-control" name="newEmployeeDateOfBirth"
                id="newEmployeeDateOfBirth" ng-model="createEmployeeCtrl.newEmployee.DateOfBirth"
                placeholder="yyyy-MM-dd" min="1950-01-01" max="1995-12-31" required>
     </div>
     <div class="form-group">
-        <label for="newEmployeeHireDate">Hire Date:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeHireDate.$touched && employeeCreateForm.newEmployeeHireDate.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeHireDate.$touched && employeeCreateForm.newEmployeeHireDate.$error.date">
-                Not a valid date!
-            </span>
+        <label for="newEmployeeVaccine">Vaccination Information:
+
         </label>
-        <input type="text" class="form-control" name="newEmployeeHireDate"
-               id="newEmployeeHireDate" ng-model="createEmployeeCtrl.newEmployee.HireDate"
-               placeholder="yyyy-MM-dd" min="1970-01-01" max="2017-03-31" required>
+        <input type="text" class="form-control" name="newEmployeeVaccine"
+               id="newEmployeeVaccine"
+               placeholder="Enter Vaccine Information" maxlength="20" pattern="[A-Za-z ]+">
     </div>
     <div class="form-group">
-        <label for="newEmployeeLicenseDate">License Date:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeLicenseDate.$touched && employeeCreateForm.newEmployeeLicenseDate.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeLicenseDate.$touched && employeeCreateForm.newEmployeeLicenseDate.$error.min">
-                Not a valid date!
-            </span>
+        <label for="newEmployeeResume">Resume Information:
+
         </label>
-        <input type="text" class="form-control" name="newEmployeeLicenseDate"
-               id="newEmployeeLicenseDate" ng-model="createEmployeeCtrl.newEmployee.LicenseDate"
-               placeholder="yyyy-MM-dd" required>
+        <input type="text" class="form-control" name="newEmployeeResume"
+               id="newEmployeeResume"
+               placeholder="Enter Resume Information" maxlength="20" pattern="[A-Za-z ]+">
     </div>
     <div class="form-group">
-        <label for="newEmployeeTerminationDate">Termination Date:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeTerminationDate.$touched && employeeCreateForm.newEmployeeTerminationDate.$error.date">
-                Not a valid date!
-            </span>
+        <label for="newEmployeeEmail">Email:
+
         </label>
-        <input type="text" class="form-control" name="newEmployeeTerminationDate"
-               id="newEmployeeTerminationDate" ng-model="createEmployeeCtrl.newEmployee.TerminationDate"
-               placeholder="yyyy-MM-dd" min="1970-01-01" max="2017-03-31">
+        <input type="text" class="form-control" name="newEmployeeEmail"
+               id="newEmployeeEmail"
+               placeholder="Enter Email" maxlength="20" pattern="[A-Za-z ]+">
     </div>
     <div class="form-group">
-        <label for="newEmployeeSalary">Salary:
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeSalary.$touched && employeeCreateForm.newEmployeeSalary.$error.required">
-                Required!
-            </span>
-            <span style="color:red" class="error" ng-show="employeeCreateForm.newEmployeeSalary.$touched && employeeCreateForm.newEmployeeSalary.$error.number">
-                Not a valid number!
-            </span>
+        <label for="newEmployeePassword">Password:
+
         </label>
-        <input type="number" class="form-control" name="newEmployeeSalary"
-               id="newEmployeeSalary" ng-model="createEmployeeCtrl.newEmployee.Salary"
-               placeholder="Enter Salary" maxlength="20" pattern="^\d+(\.\d{1,2})?$" required>
+        <input type="text" class="form-control" name="newEmployeePassword"
+               id="newEmployeePassword" ng-model="createEmployeeCtrl.newEmployee.Password"
+               placeholder="Enter Password" maxlength="20" pattern="[A-Za-z ]+">
     </div>
-    <button type="submit" class="btn btn-info btn-lg"
-    ng-disabled="employeeCreateForm.$invalid">Create</button>
+    <button type="submit" class="btn btn-info btn-lg">Submit</button>
+
     <button type="button" class="btn btn-default btn-lg pull-right" ng-click="createEmployeeCtrl.cancelCreating()">
         Cancel
     </button>

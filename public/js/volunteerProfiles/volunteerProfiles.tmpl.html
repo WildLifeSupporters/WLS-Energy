@@ -1,7 +1,7 @@
 <ui-view>
     <div>
         <button type="button" class="btn btn-link"
-                ui-sref="wombat.nav.employees.create">
+                ui-sref="wombat.nav.volunteerProfiles.create">
             <span class="glyphicon glyphicon-plus"></span>
             Create Employee
         </button>
@@ -15,7 +15,7 @@
         <th>Salary</th>
     </tr>
     <!--Think of this like a forEach loop. It's going to repeat everything from tr to /tr for each employee.-->
-    <tr ng-repeat="employee in employeesCtrl.employees">
+    <tr ng-repeat="employee in volunteerProfilesCtrl.employees">
         <td>
             <button type="button"
                     class="btn btn-link"

@@ -44,20 +44,21 @@ class EmployeesController extends Controller
         $employee = new Employee;
 
         $employee->FirstName = $request->input('FirstName');
-        $employee->MI = $request->input('MI');
+//        $employee->MI = $request->input('MI');
         $employee->LastName = $request->input('LastName');
-        $employee->HouseNumber = $request->input('HouseNumber');
-        $employee->Street = $request->input('Street');
+        $employee->AddressLine1 = $request->input('AddressLine1');
+        $employee->AddressLine2 = $request->input('AddressLine2');
+        //$employee->Street = $request->input('Street');
         $employee->City = $request->input('City');
-        $employee->County = $request->input('County');
+        //$employee->County = $request->input('County');
         $employee->EmployeeState = $request->input('EmployeeState');
-        $employee->EmployeeCountry = $request->input('EmployeeCountry');
+        //$employee->EmployeeCountry = $request->input('EmployeeCountry');
         $employee->Zip = $request->input('Zip');
         $employee->DateOfBirth = $request->input('DateOfBirth');
-        $employee->HireDate = $request->input('HireDate');
-        $employee->LicenseDate = $request->input('LicenseDate');
-        $employee->TerminationDate = $request->input('TerminationDate');
-        $employee->Salary = $request->input('Salary');
+        $employee->Vaccine = $request->input('Vaccine');
+        $employee->Resume  = $request->input('Resume');
+        $employee->Email = $request->input('Email');
+        $employee->Password = $request->input('Password');
         $employee->save();
 
         return $employee->id;
