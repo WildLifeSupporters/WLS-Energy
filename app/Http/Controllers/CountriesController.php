@@ -9,7 +9,7 @@ class CountriesController extends Controller
 {
     public function index()
     {
-        $countries = Country::all();
-        return compact('countries');
+//        $countries = Country::all();
+//        return compact('countries');
     }
 }

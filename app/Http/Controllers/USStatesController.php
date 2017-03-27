@@ -8,7 +8,7 @@ class USStatesController extends Controller
 
     public function index()
     {
-        $usstates = USState::all();
-        return compact('usstates');
+//        $usstates = USState::all();
+//        return compact('usstates');
     }
 }

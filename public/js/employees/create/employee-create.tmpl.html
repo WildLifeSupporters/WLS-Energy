@@ -60,7 +60,7 @@
         <select class="form-control"
                 id="newEmployeeState"
                 ng-model="createEmployeeCtrl.newEmployee.State"
-                ng-options="usstate.StateAbb as usstate.StateName for usstate in createEmployeeCtrl.usstates">
+                <!--ng-options="usstate.StateAbb as usstate.StateName for usstate in createEmployeeCtrl.usstates">-->
             <option value="">No State</option>
         </select>
     </div>
@@ -99,11 +99,11 @@
                placeholder="Enter Vaccine Information" maxlength="20" pattern="[A-Za-z ]+">
     </div>
     <div class="form-group">
-        <label for="newEmployeeResume">Resume Information:
+        <label for="newEmployeeattachedResume">Resume Information:
 
         </label>
-        <input type="text" class="form-control" name="newEmployeeResume"
-               id="newEmployeeResume" ng-model="createEmployeeCtrl.newEmployee.Resume"
+        <input type="text" class="form-control" name="newEmployeeattachedResume"
+               id="newEmployeeattachedResume" ng-model="createEmployeeCtrl.newEmployee.attachedResume"
                placeholder="Enter Resume Information" maxlength="20" pattern="[A-Za-z ]+">
     </div>
     <div class="form-group">
@@ -111,7 +111,7 @@
         <select class="form-control"
                 id="newEmployeeDepartment"
                 ng-model="createEmployeeCtrl.newEmployee.Department"
-                ng-options="usstate.StateAbb as usstate.StateName for usstate in createEmployeeCtrl.usstates">
+                <!--ng-options="usstate.StateAbb as usstate.StateName for usstate in createEmployeeCtrl.usstates">-->
             <option value="">No Department Selected</option>
         </select>
     </div>
