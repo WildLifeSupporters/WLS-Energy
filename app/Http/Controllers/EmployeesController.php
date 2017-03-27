@@ -23,20 +23,22 @@ class EmployeesController extends Controller
 //        https://laravel.com/docs/5.4/validation
         $this->validate($request, [
             'FirstName' => 'required | string',
-            'MI' => '',
+//            'MI' => '',
             'LastName' => 'required | string',
-            'HouseNumber' => 'required',
-            'Street' => 'required | string',
+            'AddressLine1' => 'required',
+            'AddressLine2' => 'required | string',
             'City' => 'string',
             'County' => 'required | string',
-            'EmployeeState' => '',
-            'EmployeeCountry' => 'required',
+            'State' => '',
+//            'EmployeeCountry' => 'required',
             'Zip' => 'required',
             'DateOfBirth' => 'required',
-            'HireDate' => 'required',
-            'LicenseDate' => 'required',
-            'TerminationDate' => '',
-            'Salary' => 'required'
+            'Vaccine' => 'required',
+            'Resume' => 'required',
+            'Department' => '',
+            'Phone' => 'required',
+            'Email' => 'required',
+            'Password' => 'required'
         ]);
         //if validation !successful, laravel will return a JSON response right here
         //else the function will continue
@@ -51,13 +53,14 @@ class EmployeesController extends Controller
         //$employee->Street = $request->input('Street');
         $employee->City = $request->input('City');
         //$employee->County = $request->input('County');
-        $employee->EmployeeState = $request->input('EmployeeState');
+        $employee->State = $request->input('State');
         //$employee->EmployeeCountry = $request->input('EmployeeCountry');
         $employee->Zip = $request->input('Zip');
         $employee->DateOfBirth = $request->input('DateOfBirth');
         $employee->Vaccine = $request->input('Vaccine');
         $employee->Resume = $request->input('Resume');
         $employee->Department = $request->input('Department');
+        $employee->Phone = $request->input('Phone');
         $employee->Email = $request->input('Email');
         $employee->Password = $request->input('Password');
         $employee->save();
@@ -95,20 +98,23 @@ class EmployeesController extends Controller
         $employee = Employee::find($id);
 
         $employee->FirstName = $request->input('FirstName');
-        $employee->MI = $request->input('MI');
+//        $employee->MI = $request->input('MI');
         $employee->LastName = $request->input('LastName');
-        $employee->HouseNumber = $request->input('HouseNumber');
-        $employee->Street = $request->input('Street');
+        $employee->AddressLine1 = $request->input('AddressLine1');
+        $employee->AddressLine2 = $request->input('AddressLine2');
+        //$employee->Street = $request->input('Street');
         $employee->City = $request->input('City');
-        $employee->County = $request->input('County');
-        $employee->EmployeeState = $request->input('EmployeeState');
-        $employee->EmployeeCountry = $request->input('EmployeeCountry');
+        //$employee->County = $request->input('County');
+        $employee->State = $request->input('State');
+        //$employee->EmployeeCountry = $request->input('EmployeeCountry');
         $employee->Zip = $request->input('Zip');
         $employee->DateOfBirth = $request->input('DateOfBirth');
-        $employee->HireDate = $request->input('HireDate');
-        $employee->LicenseDate = $request->input('LicenseDate');
-        $employee->TerminationDate = $request->input('TerminationDate');
-        $employee->Salary = $request->input('Salary');
+        $employee->Vaccine = $request->input('Vaccine');
+        $employee->Resume = $request->input('Resume');
+        $employee->Department = $request->input('Department');
+        $employee->Phone = $request->input('Phone');
+        $employee->Email = $request->input('Email');
+        $employee->Password = $request->input('Password');
         $employee->save();
 
         return $employee->id;

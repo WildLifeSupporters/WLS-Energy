@@ -21,7 +21,7 @@
         </label>
         <input type="text" class="form-control" name="newEmployeeLastName"
                id="newEmployeeLastName" ng-model="createEmployeeCtrl.newEmployee.LastName"
-               placeholder="Enter Last Name" maxlength="20" pattern="[\w+@\w+\.com]+" required>
+               placeholder="Enter Last Name" maxlength="20" pattern="[A-Za-z ]+" required>
     </div>
     <div class="form-group">
         <label for="newEmployeeAddressLine1">Address Line 1:
@@ -29,7 +29,7 @@
         </label>
         <input type="text" class="form-control" name="newEmployeeAddressLine1"
                id="newEmployeeAddressLine1" ng-model="createEmployeeCtrl.newEmployee.AddressLine1"
-               placeholder="Enter Address Line 1" maxlength="20" pattern="[0-9]+" required>
+               placeholder="Enter Address Line 1" maxlength="20" pattern="[A-Za-z ]+" required>
     </div>
     <div class="form-group">
         <label for="newEmployeeAddressLine2">Address Line 2:
@@ -59,7 +59,7 @@
         <label for="newEmployeeState">State: </label>
         <select class="form-control"
                 id="newEmployeeState"
-                ng-model="createEmployeeCtrl.newEmployee.EmployeeState"
+                ng-model="createEmployeeCtrl.newEmployee.State"
                 ng-options="usstate.StateAbb as usstate.StateName for usstate in createEmployeeCtrl.usstates">
             <option value="">No State</option>
         </select>
@@ -116,12 +116,20 @@
         </select>
     </div>
     <div class="form-group">
+        <label for="newEmployeePhone">Phone Number:
+
+        </label>
+        <input type="text" class="form-control" name="newEmployeePhone"
+               id="newEmployeePhone" ng-model="createEmployeeCtrl.newEmployee.Phone"
+               placeholder="Enter Phone Number" maxlength="20" pattern="[0-9]+" required>
+    </div>
+    <div class="form-group">
         <label for="newEmployeeEmail">Email:
 
         </label>
-        <input type="text" class="form-control" name="newEmployeeEmail"
+        <input type="email" class="form-control" name="newEmployeeEmail"
                id="newEmployeeEmail" ng-model="createEmployeeCtrl.newEmployee.Email"
-               placeholder="Enter Email" maxlength="20" pattern="[A-Za-z ]+">
+               placeholder="Enter Email">
     </div>
     <div class="form-group">
         <label for="newEmployeePassword">Password:

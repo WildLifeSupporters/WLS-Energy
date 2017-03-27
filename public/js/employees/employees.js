@@ -3,6 +3,7 @@ angular.module('employees', [
     // employees module is then routed to the main application
     'employees.create',
     'employees.edit',
+    'employees.viewProfile',
     'wombat.models.employees'
 ])
     .config(function ($stateProvider) {

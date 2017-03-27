@@ -67,7 +67,8 @@
 <script src="js/claims/claims.js"></script>
 <script src="js/claims/edit/claim-edit.js"></script>
 <script src="js/claims/create/claim-create.js"></script>
-<script src="js/volunteerProfiles/volunteerProfiles.js"></script>
+
+<script src="js/employees/viewProfile/viewProfile.js"></script>
 
 </body>
 </html>
